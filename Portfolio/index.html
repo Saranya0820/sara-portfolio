@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scaled=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/ec13f54baf.js" crossorigin="anonymous"></script>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
+
+    </head>
+    <body>
+        <!-----Header----->
+        <div id="header">
+
+            <div class="container">
+
+                <nav>
+                    <!---<h1><span>S</span>ara<span>P</span>rofile</h1>-->
+                    <img src="image/logo2.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home </a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Service</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()  "></i>
+                </nav>
+                <div class="header-text">
+                    <p style="font-size:20px;padding:0;">Software Developer</p>
+                    <h1>Hi, I am <span>Saranya Devi </span><br>Arumugam From Stockholm</h1>
+                    <p>I am keen to obtain new skills and training and have <br>a flexible approach to all work situations, and find it easy to adapt.</p>
+                    <div class="home-icon">
+                        <a href="https://www.linkedin.com/in/sd-arumugam-2a2b7025a"><i class='bx bxl-linkedin-square'></i></a>
+                        <a href="https://github.com/"><i class='bx bxl-github'></i></a>
+                        <a href="https://instagram.com"><i class="bx bxl-instagram"></i></a>
+                        <a href="https://facebook.com/"><i class="bx bxl-facebook"></i></a>
+                    </div>
+                </div>
+            
+
+                 <div>
+                      <a href="image/sar.pdf"  download class="btn btn3">Download CV</a>
+                 </div>
+            </div>
+
+        </div>
+    
+    <!------About-------->
+         <div id="about"> 
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="about-col-1">
+                            <img src="image/saranya.jpg">
+                        
+                        </div>
+                        <div class="about-col-2">
+                             <h1 class="sub-title">About Me</h1>
+                             <p>Enthusiastic and dedicated junior Python Developer with a passion for web development using Django Framework. 
+                                Eager to leverage academic foundation and hands-on experience to contribute effectively to dynamic development teams. 
+                                Strong familiarity with version control systems such as Git, ensuring collaborative development workflows and codebase management.</p>
+                             <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                             </div>
+                             <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>UI/UX</span><br>Designing Web Applications using Figma</li>
+                                    <li><span>Web Development</span><br>Creating Web App using python with Django framework</li>
+                                    <li><span>DataBase</span><br>Worked with various DB includes MySQL, SQlite</li>
+                                    <li><span>Version Control(GIT)</span><br>Capable of managing code repositories, collaborating with team members,<br>and resolving merge conflicts.</li>
+                                    <li><span>Azure Cloud</span><br>Knowledgeable about Deployment and hosting platform</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2021-2023</span></li>
+                                    <li>ESKRO Service Private Limited<br>Manual and Automation Tester
+                                    <br> core Java, Selenium webdriver,JIRA Tool</li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2013</span><br>Master of Computer Application<br>Anna University,India</li>
+                                    <li><span>2010</span><br>Bachelore of Computer Application<br>Madras University,India</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="services">
+                <div class="container">
+                    <h1 class="sub-title">My Services</h1>
+                    <br>
+                    <br>
+                    <div class="services-list">
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>UX/UI Design</h2>
+                            <br>
+                            <p>The Tablet-based Food Ordering and Circus Ticket Reservation System for Restaurants is a comprehensive solution designed to streamline 
+                                the dining experience for customers while offering added entertainment options. 
+                                This innovative system integrates seamlessly into restaurant operations, enhancing efficiency and customer satisfaction.</p>
+                            <p>Tools: Figma</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-crop-simple"></i>
+                            <h2>Web Developer using Python and Django</h2>
+                            <br>
+                            <p>The Online Book Selling Application is a robust e-commerce platform designed to facilitate for selling of books over the internet. 
+                                With user-friendly features  this application provides a seamless shopping experience for book enthusiasts.</p> 
+                            <p>Language:Python Django HTML CSS Bootstrap SQlite</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-desktop"></i>
+                            <h2>WebSite Design</h2>
+                            <br>
+                            <p>In the era of diverse devices, I ensure that my website looks and performs seamlessly across all screens. <br>
+                                From desktops to smartphones,
+                                 I prioritize responsive design to deliver a consistent and engaging experience</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-----Portfolio--->
+            <div id="portfolio">
+                <div class="container">
+                    <h1 class="sub-title">My Work</h1>
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="image/work1.jpg">
+                            <div class="layer">
+                                <h3>Online Book App</h3>
+                                <p> The Online Book Selling Application is a robust e-commerce platform designed to facilitate the buying and selling of books over the internet.</p>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="image/work2.jpg">
+                            <div class="layer">
+                                <h3>UI/UX Designs</h3>
+                                <p> Desinged Restaurant App and somemore website using figma tool, </p>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="image/work3.jpg">
+                            <div class="layer">
+                                <h3>Web Site</h3>
+                                <p> Created Attractive Website for the Business development.</p>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<a href="#" class="btn">See More</a>-->
+                </div>
+            </div>
+            <br>
+            <br>
+            <!-------Contact ------->
+            <div id ="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact Me</h1>
+                            
+                            <p><i class="far fa-hand-paper"></i>Hello there! I'm thrilled that you've made it to this corner of my digital space. <br>
+                                Whether you're interested in my work, have a project idea, or just want to connect, <br>
+                                I'm all ears (or in this case, eyes)! Feel free to Contact Me</p>
+                            <p><i class="fas fa-paper-plane"></i>p.saranya0820@gmail.com</p>
+                            <p><i class="fas fa-phone-square"></i>+46 73 505 7279</p>
+                          <div class="home-icon">
+                                <a href="https://www.linkedin.com/in/sd-arumugam-2a2b7025a"><i class='bx bxl-linkedin-square'></i></a>
+                                <a href="https://github.com/"><i class='bx bxl-github'></i></a>
+                                <a href="https://instagram.com"><i class="bx bxl-instagram"></i></a>
+                                <a href="https://facebook.com/"><i class="bx bxl-facebook"></i></a>
+                            </div>
+                          <br>
+                         
+                        </div>
+                        <div class="contact-right">
+                            <form action=" " id="contact-form"> <!--name="submit-to-google-sheet"-->
+                                <input type="text" name="user_name" placeholder="Your Name" required>
+                                <input type="email" name="user_email" placeholder="your Email" required>
+                                <textarea name="user_message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn2">Submit</button>
+                            </form>
+                            <p class="msg" id="contact-message"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright <span>&copy;</span> Saranya Devi Arumugam</p>
+                </div>
+            </div>
+
+            <script>
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+
+                function opentab(tabname){
+                    for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                    }
+                    for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+                    
+                }
+            </script>
+        <script>
+            var sidemen = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemen.style.right = "0";
+            }
+            function closemenu(){
+                sidemen.style.right="-200px";
+
+            }
+        </script>
+        <script>
+
+        /*const scriptURL = 'https://script.google.com/macros/s/AKfycbxjEp80Nq4pf-SVKMY_wAPRSpezrq2BC9RT-KXV9W3bmkW5gZCDfw3T4cBKRFmC2dJH/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")*/
+
+   /* form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+  })*/
+document.addEventListener('DOMContentLoaded', function() {
+    // Your code here
+
+  const contactForm = document.getElementById('contact-form'),
+              contactMessage = document.getElementById('contact-message')
+
+        const sendEmail = (e) => {
+            e.preventDefault()
+            // serviceId,templateId,#form ,public Key 
+            emailjs.sendForm('service_cnn670g','template_xc959l6','#contact-form','aXmB-Q_KbgmZM7Adk')
+             .then(() => {
+                 contactMessage.textContent = "Message sent Successfully"
+                 setTimeout(() => {
+                     contactMessage.textContent = ''
+                 },5000)
+                 contactForm.reset()
+             },() => {
+                 contactMessage.textContent ='Message Not Sent (Server Error)'
+             })
+
+        }
+        contactForm.addEventListener('submit', sendEmail)
+});
+</script>
+
+
+   
+ </body>
+</html>
